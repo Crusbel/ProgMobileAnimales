@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuMamiferos"
+        android:enabled="true"
+        android:title="@string/mamiferos"
+        android:icon="@drawable/ic_celular"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menuAves"
+        android:enabled="true"
+        android:title="@string/aves"
+        android:icon="@drawable/ic_laptop"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menuReptiles"
+        android:enabled="true"
+        android:title="@string/reptiles"
+        android:icon="@drawable/ic_televisor"
+        app:showAsAction="ifRoom"/>
+</menu>
