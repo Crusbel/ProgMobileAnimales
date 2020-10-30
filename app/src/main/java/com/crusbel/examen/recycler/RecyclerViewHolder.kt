@@ -13,16 +13,16 @@ import com.crusbel.examen.R
 class RecyclerViewHolder(itemView: View) :
     RecyclerView.ViewHolder(itemView) {
     val viewnombre: TextView
-    val viewprecio: TextView
+    val viewtipo: TextView
     val viewdescripcion: TextView
     val viewimagen: ImageView
     val boxDetalle: LinearLayout
 
     init {
         viewnombre = itemView.findViewById(R.id.txtNombre)
-        viewprecio = itemView.findViewById(R.id.txtPrecio)
+        viewtipo = itemView.findViewById(R.id.txtTipo)
         viewdescripcion = itemView.findViewById(R.id.txtDescripcion)
-        viewimagen = itemView.findViewById(R.id.imgProduct)
+        viewimagen = itemView.findViewById(R.id.imgAnimal)
         boxDetalle = itemView.findViewById(R.id.boxDetalle)
 
     }

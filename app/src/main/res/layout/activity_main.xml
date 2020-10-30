@@ -20,12 +20,28 @@
         app:itemIconTint="#e3e3e3"
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu"/>
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/textprueba" android:layout_above="@+id/vPager" android:layout_below="@+id/mainBar"></TextView>
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/nav"
-        android:layout_below="@id/mainBar" />
+        android:layout_below="@id/mainBar" >
 
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="70dp"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
 </RelativeLayout>

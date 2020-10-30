@@ -26,10 +26,10 @@ class RvAdapter(val userList: ArrayList<Model>,val context: Context) : RecyclerV
 
     override fun onBindViewHolder(holder: RecyclerViewHolder, position: Int) {
         holder.viewnombre.text = userList[position].nombre
-        holder.viewprecio.text = userList[position].precio.toString()
+        holder.viewtipo.text = userList[position].tipo
         holder.viewdescripcion.text = userList[position].descripcion
         Glide.with(context)
-            .load(userList[position].imagen)
+            .load("https://assets.stickpng.com/images/584ab294e583a46e8c837a30.png")
             .into(holder.viewimagen);
         holder.viewimagen.setOnClickListener {
             if (holder.boxDetalle.visibility == LinearLayout.VISIBLE){
